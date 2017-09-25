@@ -4086,7 +4086,9 @@
 		}
 
 		#footer{
-			background-color: #333;
+			background-color: #EDEDED;
+			color: black;
+			font-family: 'lightFont';
 			
 		}
 

@@ -1701,8 +1701,9 @@
 		}
 
 	strong, b {
-		color: #ffffff;
-		font-weight: 600;
+		font-family: 'regFont';
+		color: black;
+		font-weight: 800;
 	}
 
 	em, i {
@@ -4096,4 +4097,9 @@
 			margin-left: -70px;
 			font-size:15px;
 
+		}
+
+		#banner-line{
+
+			color: #D8D8D8;
 		}

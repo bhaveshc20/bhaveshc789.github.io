@@ -43,22 +43,12 @@ function accelerationHandler(acceleration, targetId) {
   //document.getElementById(targetId).innerHTML = info;
 }
 
+  function yell() {
+    console.log("This happened!");
+    document.body.setAttribute('style', 'background-color : black !important');
+  }
 
 var test = true;
-
-function change_color(flag) {
-  var color = null;
-  if (flag === true) {
-    var color = "black";
-  } else {
-    var color = "white";
-  }
-  document.body.style.background = color;
-  flag = !flag
-  var t = setTimeout(function () {
-    change_color(flag)
-  }, 1000);
-}
 
 function MaccelerationHandler(acceleration, targetId) {
   var info, xyz = "[X, Y, Z]";
@@ -67,31 +57,25 @@ function MaccelerationHandler(acceleration, targetId) {
 
 
   if (zz>10 && test) {
-          //   test = false;
+            test = false;
 
-          //   x = 1;
-          //   var timer = setInterval(function change() {
-          //     if (x === 1) {
-          //         color = "#ffffff";
-          //       x = 2;
-          //     } else {
-          //         color = "#000000";
-          //         x = 1;
-          //     }
+            x = 1;
+            var timer = setInterval(function change() {
+              if (x === 1) {
+                  color = "#ffffff";
+                x = 2;
+              } else {
+                  color = "#000000";
+                  x = 1;
+              }
 
-          //     document.body.style.background = color;
-          //   }, 50);
+              document.body.style.background = color;
+            }, 50);
 
-          // setTimeout(function() { 
-          //   clearInterval(timer); 
-          // }, 1000); 
-          // yell();
-          var timer = setInterval("change_color(true)", 1000);
-          document.body.style.background = "black";
-
-          setTimeout(function() {
-            clearInterval(timer);
-          })
+          setTimeout(function() { 
+            clearInterval(timer); 
+          }, 1000); 
+          yell();
   }
 }
 

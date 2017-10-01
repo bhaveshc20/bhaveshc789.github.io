@@ -45,7 +45,7 @@ function accelerationHandler(acceleration, targetId) {
 
   function yell() {
     console.log("This happened!");
-    document.getElementById('updateDiv').style.backgroundImage = "url('1.png')";
+    document.getElementById('updateDiv').style.backgroundColor = "#000000 !important";
   }
 
 var test = true;

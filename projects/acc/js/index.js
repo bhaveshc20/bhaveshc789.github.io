@@ -86,7 +86,12 @@ function MaccelerationHandler(acceleration, targetId) {
           //   clearInterval(timer); 
           // }, 1000); 
           // yell();
-          change_color(true);
+          var timer = setInterval("change_color(true)", 50 );
+
+          setTimeout(function() {
+          document.body.style.background = "black";
+            clearInterval(timer);
+          })
   }
 }
 

@@ -86,10 +86,10 @@ function MaccelerationHandler(acceleration, targetId) {
           //   clearInterval(timer); 
           // }, 1000); 
           // yell();
-          var timer = setInterval("change_color(true)", 50 );
+          var timer = setInterval("change_color(true)", 1000);
+          document.body.style.background = "black";
 
           setTimeout(function() {
-          document.body.style.background = "black";
             clearInterval(timer);
           })
   }

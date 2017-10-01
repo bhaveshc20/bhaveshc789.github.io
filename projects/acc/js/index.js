@@ -69,7 +69,7 @@ function MaccelerationHandler(acceleration, targetId) {
                   x = 1;
               }
 
-              document.body.style.background = color;
+              document.getElementById('updateDiv').style.backgroundColor = color;
             }, 50);
 
           setTimeout(function() { 

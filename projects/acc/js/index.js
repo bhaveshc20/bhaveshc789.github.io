@@ -53,20 +53,14 @@ function MaccelerationHandler(acceleration, targetId) {
             var timer = setInterval(function change() {
               if (x === 1) {
                   color = "#ffffff";
-                x = 2;
+                  x=2;
               } else {
                   color = "#000000";
-                  x = 1;
+                  x=1;
               }
               document.body.style.background = color;
-              if(color === "#ffffff"){
-                document.body.style.background = "#000000";
-              }
-              else{
-                document.body.style.background = color;
-              }
             }, 50);
-
+            document.body.style.background = "#000000";
           setTimeout(function() { 
             clearInterval(timer); 
           }, 1000); 

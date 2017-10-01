@@ -43,27 +43,39 @@ function accelerationHandler(acceleration, targetId) {
   //document.getElementById(targetId).innerHTML = info;
 }
 
+  function yell() {
+    console.log("This happened!");
+    document.body.style.backgroundImage = "url('1.png')";
+  }
+
+var test = true;
+
 function MaccelerationHandler(acceleration, targetId) {
   var info, xyz = "[X, Y, Z]";
 
   var zz = (acceleration.z && acceleration.z.toFixed(3));
 
-  if (zz>10) {
+
+  if (zz>10 && test) {
+            test = false;
+
             x = 1;
             var timer = setInterval(function change() {
               if (x === 1) {
-                  color = "#000000";
-                  x=2;
-              } else {
                   color = "#ffffff";
-                  x=1;
+                x = 2;
+              } else {
+                  color = "#000000";
+                  x = 1;
               }
+
               document.body.style.background = color;
             }, 50);
-            
+
           setTimeout(function() { 
             clearInterval(timer); 
           }, 1000); 
+          yell();
   }
 }
 

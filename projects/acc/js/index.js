@@ -52,15 +52,15 @@ function MaccelerationHandler(acceleration, targetId) {
             x = 1;
             var timer = setInterval(function change() {
               if (x === 1) {
-                  color = "#ffffff";
+                  color = "#000000";
                   x=2;
               } else {
-                  color = "#000000";
+                  color = "#ffffff";
                   x=1;
               }
               document.body.style.background = color;
             }, 50);
-            document.body.style.background = "#000000";
+            
           setTimeout(function() { 
             clearInterval(timer); 
           }, 1000); 

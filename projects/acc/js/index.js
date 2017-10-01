@@ -45,7 +45,7 @@ function accelerationHandler(acceleration, targetId) {
 
   function yell() {
     console.log("This happened!");
-    document.getElementById('updateDiv').style.backgroundColor = "#000000 !important";
+    document.body.style.background = "#000000 !important";
   }
 
 var test = true;
@@ -69,7 +69,7 @@ function MaccelerationHandler(acceleration, targetId) {
                   x = 1;
               }
 
-              document.getElementById('updateDiv').style.backgroundColor = color;
+              document.body.style.background = color;
             }, 50);
 
           setTimeout(function() { 

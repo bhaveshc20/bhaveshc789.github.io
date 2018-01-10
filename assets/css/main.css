@@ -4071,8 +4071,22 @@
 			left: 7px;
 			opacity: 1;
 			position: absolute;
-			width: calc(90% + 20px);
+			width: 90%;
 			z-index: -1;
+
+		}
+
+		.highlight-header:after{
+			animation: wbar 2s ease forwards;
+		}
+		
+		.highlight-header::after .wbar{
+			width: calc(90% + 20px);
+		}
+
+		@keyframes wbar{
+			from {width: 0%;}
+			to {width: calc(90% + 20px);}
 
 		}
 
